@@ -1,0 +1,20 @@
+--cpu=Cortex-M4.fp
+".\q3\stm32f3xx_hal.o"
+".\q3\stm32f3xx_hal_cortex.o"
+".\q3\stm32f3xx_hal_dma.o"
+".\q3\stm32f3xx_hal_gpio.o"
+".\q3\stm32f3xx_hal_rcc.o"
+".\q3\stm32f3xx_hal_i2c.o"
+".\q3\gpio_setup.o"
+".\q3\stm32f3xx_it.o"
+".\q3\q3.o"
+"..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Library\ARM\RTX_CM4F.lib"
+".\q3\cmsis_os1.o"
+".\q3\rtx_lib.o"
+".\q3\rtx_config.o"
+".\q3\startup_stm32f303xc.o"
+".\q3\system_stm32f3xx.o"
+--library_type=microlib --strict --scatter ".\Q3\Q3.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Q3.map" -o .\Q3\Q3.axf
